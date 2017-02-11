@@ -1,7 +1,7 @@
 {
-  "name": "react-component-starter",
+  "name": "react-bootstrap-js",
   "version": "0.1.0",
-  "description": "Starter kit for React components in es6",
+  "description": "Bootstrap 4 components (that require JavaScript) in React.",
   "main": "./lib/index.js",
   "files": [
     "dist",
@@ -15,8 +15,8 @@
     "lint": "eslint --ext=js,jsx src __tests__",
     "build:css": "node-sass css/styles.scss dist/style.css",
     "build:lib": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
-    "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack src/index.js dist/react-component-starter.js",
-    "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack src/index.js dist/react-component-starter.min.js",
+    "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack src/index.js dist/react-bootstrap-js.js",
+    "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack src/index.js dist/react-bootstrap-js.min.js",
     "build": "npm run build:lib && npm run build:umd && npm run build:umd:min && npm run build:css",
     "deploy-storybook": "storybook-to-ghpages",
     "test": "cross-env BABEL_ENV=commonjs jest --config .jestconfig",
@@ -28,23 +28,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yangshun/react-component-starter.git"
+    "url": "https://github.com/yangshun/react-bootstrap-js.git"
   },
   "keywords": [
     "react",
     "component",
-    "starter",
-    "es2015",
-    "commonjs",
-    "umd"
+    "bootstrap",
+    "bootstrap 4"
   ],
   "author": "Tay Yang Shun <tay.yang.shun@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yangshun/react-component-starter/issues"
+    "url": "https://github.com/yangshun/react-bootstrap-js/issues"
   },
-  "homepage": "https://github.com/yangshun/react-component-starter",
-  "npmName": "react-component-starter",
+  "homepage": "https://github.com/yangshun/react-bootstrap-js",
+  "npmName": "react-bootstrap-js",
   "devDependencies": {
     "@kadira/storybook": "^2.35.3",
     "@kadira/storybook-deployer": "^1.2.0",
