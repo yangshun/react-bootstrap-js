@@ -1,5 +1,5 @@
 import { configure } from '@kadira/storybook';
-import '../css/styles.scss';
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
 
 function loadStories() {
   require('../stories');

@@ -1,3 +1,3 @@
-import FooBar from './FooBar';
+import Alert from './Alert';
 
-export default FooBar;
+export default Alert;
