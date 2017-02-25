@@ -1,3 +1,7 @@
 import Alert from './Alert';
+import Button from './Button';
 
-export default Alert;
+export {
+  Alert,
+  Button,
+};

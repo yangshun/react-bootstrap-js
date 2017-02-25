@@ -1,7 +1,10 @@
 import React from 'react';
 import { storiesOf } from '@kadira/storybook';
 
-import Alert from '../src';
+import {
+  Alert,
+  Button,
+} from '../src';
 
 storiesOf('Components', module)
   .add('Alert', () => (
@@ -45,5 +48,46 @@ storiesOf('Components', module)
       >
         <strong>Oh snap!</strong> Change a few things up and try submitting again.
       </Alert>
+    </div>
+  ))
+  .add('Button', () => (
+    <div>
+      <h2>Buttons</h2>
+
+      <h5>Default</h5>
+      <Button>
+        Primary
+      </Button>
+      {' '}
+      <Button className="btn btn-secondary">
+        Secondary
+      </Button>
+      {' '}
+      <Button className="btn btn-success">
+        Success
+      </Button>
+      {' '}
+      <Button className="btn btn-info">
+        Info
+      </Button>
+      {' '}
+      <Button className="btn btn-warning">
+        Warning
+      </Button>
+      {' '}
+      <Button className="btn btn-danger">
+        Danger
+      </Button>
+      {' '}
+      <Button className="btn btn-link">
+        Link
+      </Button>
+      <br/>
+
+      <h5>Toggle States</h5>
+      <Button active>
+        Primary
+      </Button>
+      <br/>
     </div>
   ));
